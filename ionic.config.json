@@ -1,0 +1,7 @@
+{
+  "name": "h3-alza",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
