@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Mobilný náhlad</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			outline: 0;
+		}
+
+		body {
+			height: 100vh;
+			width: 100vw;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: lightgray;
+		}
+
+		.mobile-wrapper {
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+			padding: 48px 8px;
+			background-color: black;
+			border-radius: 32px;
+		}
+
+		iframe {
+			width: calc(900px / 2.5);
+			height: calc(1800px / 2.5);
+			border-radius: 8px;
+			background: white;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="mobile-wrapper">
+		<iframe id="iframe" frameborder="0"></iframe>
+	</div>
+
+	<script>
+		document.getElementById('iframe').src = location.origin
+
+	</script>
+</body>
+
+</html>

@@ -7,7 +7,10 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint","deploy": "npm install && npm run build && cp -r dist/. ../",
+    "build-android": "npm run build && npx cap sync android && npx cap open android",
+    "build-ios": "npm run build && npx cap sync ios && npx cap open ios",
+    "updateAssets": "cordova-res ios && cordova-res android && node src/plugins/updateAssets/main.js"
   },
   "dependencies": {
     "@capacitor/app": "1.1.0",
@@ -19,7 +22,9 @@
     "@ionic/vue-router": "^6.0.0",
     "core-js": "^3.6.5",
     "vue": "^3.2.21",
-    "vue-router": "^4.0.12"
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.0",
+    "axios": "^0.21.1"
   },
   "devDependencies": {
     "@capacitor/cli": "3.4.0",
@@ -44,5 +49,5 @@
     "ts-jest": "^27.0.7",
     "typescript": "^4.3.5"
   },
-  "description": "An Ionic project"
+  "description": "HybridLab Project 2022"
 }
