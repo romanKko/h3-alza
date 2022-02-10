@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router';
+//import wAxios from '@/plugins/w/axios'
+//import Vuelidate from 'vuelidate'
 
 import { IonicVue } from '@ionic/vue';
 
@@ -25,8 +27,20 @@ import './theme/variables.css';
 
 const app = createApp(App)
   .use(IonicVue)
-  .use(router);
+  .use(router)
+  //.use(Vuelidate)
+
+import { registerIonicComponents } from '@/plugins/ionic'
+registerIonicComponents(app)
   
 router.isReady().then(() => {
   app.mount('#app');
 });
+
+// // Toast
+// import wToast from '@/plugins/w/toast'
+// app.config.globalProperties.$wToast = wToast
+
+// // Loader
+// import wLoader from '@/plugins/w/loader'
+// app.config.globalProperties.$wLoader = wLoader  
