@@ -3,6 +3,7 @@ import { RouteRecordRaw } from 'vue-router'
 import HomePage from '../views/HomePage.vue'
 import Onboarding from '../views/OnboardingPage.vue'
 import DetailStaze from '../views/DetailStaze.vue'
+import detailStazistu from '../views/detailStazistu.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -23,6 +24,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/detailstaze',
     name: 'Detail Staze',
     component: DetailStaze
+  },
+  {
+    path: '/detail-stazistu',
+    component: detailStazistu
   }
 ]
 
