@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "kokot",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
