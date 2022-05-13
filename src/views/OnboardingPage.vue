@@ -17,7 +17,7 @@
         <h1 id="categories-title">Hľadám</h1>
 
         <div class="cards">
-          <ion-card>
+          <ion-card @click="findStaz()">
             <ion-card-header>
               <ion-card-title>Stáž</ion-card-title>
             </ion-card-header>
@@ -25,7 +25,7 @@
             <ion-card-content> Bugala nastyluj dik </ion-card-content>
           </ion-card>
 
-          <ion-card>
+          <ion-card @click="findStazistov()">
             <ion-card-header>
               <ion-card-title>Stážistov</ion-card-title>
             </ion-card-header>
@@ -47,6 +47,15 @@ export default {
     IonContent,
     IonPage,
     TheHeader
+  },
+
+  methods: {
+    findStaz() {
+      alert('staz')
+    },
+    findStazistov() {
+      alert('stazisti')
+    }
   }
 }
 </script>
@@ -77,6 +86,10 @@ export default {
 .cards {
   display: flex;
   flex-direction: row;
+}
+
+.cards ion-card:hover {
+  cursor: pointer;
 }
 
 #categories-title {

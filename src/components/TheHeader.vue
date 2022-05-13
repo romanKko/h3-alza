@@ -2,8 +2,14 @@
   <ion-header>
     <ion-toolbar color="secondary">
       <img src="../views/img/expatriate.png" id="expat" />
+
+      <!-- docasne linky aby sme to nemuseli nonstop pisat -->
+      <a href="/onboarding">Onboarding</a>
+      <a href="/detailstaze">Detail Staze</a>
+
       <ion-title>SusAlza 3</ion-title>
-      <ion-button slot="end">Sign Up</ion-button>
+
+      <ion-button slot="end" @click="signUp()">Sign Up</ion-button>
     </ion-toolbar>
   </ion-header>
 </template>
@@ -16,6 +22,12 @@ export default {
     IonHeader,
     IonTitle,
     IonToolbar
+  },
+
+  methods: {
+    signUp() {
+      alert('signup')
+    }
   }
 }
 </script>
