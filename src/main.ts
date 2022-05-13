@@ -32,7 +32,13 @@ const app = createApp(App)
   .use(IonicVue)
   .use(router)
   .use(store)
-  .use(w)
+  .use(w, {
+    moxios: {
+      routes: {
+        'GET interns': true
+      }
+    }
+  })
 
   
 router.isReady().then(() => {
