@@ -1,26 +1,26 @@
 <template>
-  <ion-page>
+  <ion-page class="neviem">
 	<TheHeader />
 
 	<ion-content>
-		<div>
-			<ion-list lines="none">
+		<div class="width">
+			<ion-list lines="none" class="vsetko">
 				<ion-item>
-					<ion-label>user.name</ion-label>
+					<h1 class="size ion-margin-top">user.name</h1>
+				</ion-item>
+				<ion-item>
+					<img class="ion-margin-top sirka " src="@/views/img/stazista.jpg" alt="Fotografia stazistu">
 				</ion-item>
 
 				<ion-item>
-					<img class="ion-margin-top" src="@/views/img/stazista.jpg" alt="Fotografia stazistu">
-				</ion-item>
-
-				<ion-item>
-					<ion-text>Bavi ma programovat a chcem sa  v tom zlepsovat. mam rad zvieratka a hokej. v programovani nemam moc velku prax ale som ochohotny tomu obetovat vsetok volny cas a byt v tom najlepsi </ion-text>
+					<ion-text class="sirka ion-margin">Bavi ma programovat a chcem sa  v tom zlepsovat. mam rad zvieratka a hokej. v programovani nemam moc velku prax ale som ochohotny tomu obetovat vsetok volny cas a byt v tom najlepsi </ion-text>
 				</ion-item>
 			</ion-list>
-
+<div class="vsetko">
+    <div>
 			<ion-row>
 				<ion-col>
-					<h1>Miesto staze</h1>
+					<h1 class="size">Miesto staze</h1>
 				</ion-col>
 			</ion-row>
 			<ion-row>
@@ -31,7 +31,7 @@
 
 			<ion-row>
 				<ion-col>
-					<h1>Vzdelanie</h1>
+					<h1 class="size">Vzdelanie</h1>
 				</ion-col>
 			</ion-row>
 			<ion-row>
@@ -42,7 +42,7 @@
 
 			<ion-row>
 				<ion-col>
-					<h1>Pozadovany plat</h1>
+					<h1 class="size">Pozadovany plat</h1>
 				</ion-col>
 			</ion-row>
 			<ion-row>
@@ -53,7 +53,7 @@
 
 			<ion-row>
 				<ion-col>
-					<h1>Prax</h1>
+					<h1 class="size">Prax</h1>
 				</ion-col>
 			</ion-row>
 			<ion-row>
@@ -64,7 +64,7 @@
 
 			<ion-row>
 				<ion-col>
-					<h1>Skills</h1>
+					<h1 class="size">Skills</h1>
 				</ion-col>
 			</ion-row>
 			<ion-row>
@@ -75,7 +75,7 @@
 
 			<ion-row>
 				<ion-col>
-					<h1>Licencie a certifikaty</h1>
+					<h1 class="size">Licencie a certifikaty</h1>
 				</ion-col>
 			</ion-row>
 			<ion-row>
@@ -86,7 +86,7 @@
 
 			<ion-row>
 				<ion-col>
-					<h1>Kontakt</h1>
+					<h1 class="size">Kontakt</h1>
 				</ion-col>
 			</ion-row>
 			<ion-row>
@@ -97,6 +97,8 @@
 					<ion-button>Kontaktovat</ion-button>
 				</ion-col>
 			</ion-row>
+    </div>
+</div>
 		</div>
 
 	</ion-content>
@@ -118,4 +120,36 @@ export default {
 
 <style lang="scss" scoped>
 
+.width{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    
+}
+
+
+.ion-center{
+    display: flex;
+    justify-content: center;
+}
+
+.vsetko{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+ion-button{
+    margin-left: 0px !important;
+}
+
+.sirka{
+    width: 700px;
+}
+
+.size{
+    font-weight: 700;
+}
 </style>
