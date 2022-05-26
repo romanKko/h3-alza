@@ -21,12 +21,12 @@
     "@capacitor/status-bar": "1.0.8",
     "@ionic/vue": "^6.0.0",
     "@ionic/vue-router": "^6.0.0",
-    "axios": "^0.26.0",
+    "axios": "^0.26.1",
     "core-js": "^3.6.5",
-    "mitt": "^3.0.0",
+    "mitt": "^2.1.0",
     "vue": "^3.2.21",
     "vue-router": "^4.0.12",
-    "vuex": "^4.0.0"
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@capacitor/cli": "3.4.1",
