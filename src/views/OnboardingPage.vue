@@ -9,7 +9,7 @@
 
       <div class="searchbar">
         <ion-item>
-          <ion-searchbar></ion-searchbar>
+          <ion-searchbar placeholder="Vyhľadajte stáž, stážistu alebo firmu"></ion-searchbar>
         </ion-item>
       </div>
 
@@ -17,21 +17,39 @@
         <h1 id="categories-title">Hľadám</h1>
 
         <div class="cards">
-          <ion-card @click="findStaz()">
+
+
+         
+          <ion-card @click="findStaz()" class="card">
             <ion-card-header>
               <ion-card-title>Stáž</ion-card-title>
+              <div class="hr"> </div>
             </ion-card-header>
-
-            <ion-card-content> Bugala nastyluj dik </ion-card-content>
+             
+            <ion-card-content class="card1">
+                 <img class="stazistov" src="./img/stazistov.png" alt="" />
+            </ion-card-content>
           </ion-card>
 
-          <ion-card @click="findStazistov()">
+
+
+<div class="haha">
+
+</div>
+
+
+
+          <ion-card @click="findStazistov()" class="card">
             <ion-card-header>
               <ion-card-title>Stážistov</ion-card-title>
+              <div class="hr"> </div>
             </ion-card-header>
 
-            <ion-card-content> Bugala nastyluj dik </ion-card-content>
+            <ion-card-content>
+                <img class="staz" src="./img/staz.png" alt="" />
+            </ion-card-content>
           </ion-card>
+  
         </div>
       </div>
       <the-footer />
@@ -76,6 +94,7 @@ export default {
 
 .searchbar {
   margin: 1rem 25vw 5rem 25vw;
+  
 }
 
 .categories {
@@ -95,9 +114,52 @@ export default {
   cursor: pointer;
 }
 
+.card{
+    min-width: 350px;
+    min-height: 200px;
+    max-height: 200px;
+    background: rgba(46, 156, 236, 1) ;
+}
+
 #categories-title {
   font-size: 5rem;
   font-weight: bold;
   color: #152536;
 }
+
+.hr {
+  border-bottom: 1px solid rgba(45, 130, 212, 1);
+  margin: 10px 0;
+  width: 100%;
+}
+
+
+.card1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+ion-card-header{
+    padding-bottom: 0px !important;
+}
+
+.staz{
+    margin-top: -58px;
+}
+
+.stazistov{
+    margin-top: -20px;
+}
+
+ion-card-title{
+    color: white;
+    font-weight: 500;
+}
+
+.haha{
+    width: 300px;
+}
+
 </style>
