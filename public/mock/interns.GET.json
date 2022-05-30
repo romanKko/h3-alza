@@ -1,0 +1,43 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Roman Csibrei",
+            "description": "<p>Bavi ma programovat a chcem sa  v tom zlepsovat. mam rad zvieratka a hokej. v programovani nemam moc velku prax ale som ochohotny tomu obetovat vsetok volny cas a byt v tom najlepsi ).<\/p>",
+            "hash": "((1,4),(2,7,8), (3,5,6))",
+            "order": 1,
+            "image": {
+                "id": 13,
+                "disk_name": "5fa97bb2bbc25379299283.png",
+                "file_name": "hybridlab.png",
+                "file_size": 130989,
+                "content_type": "image\/png",
+                "title": null,
+                "description": null,
+                "field": "hero_image",
+                "sort_order": 13,
+                "created_at": "2020-11-09 17:26:10",
+                "updated_at": "2020-11-09 17:26:22",
+                "path": "https://api.sportnet.online/v1/users/5d65761d86dc8b72382ef36e/photo/8ac74436-9a35-409d-a4e8-21326ad89894",
+                "extension": "png"
+            },
+            "created_at": "2020-11-09 17:26:22",
+            "updated_at": "2020-11-09 17:26:22"
+        }
+    ],
+    "links": {
+        "first": "https:\/\/open-academy.sk\/cms\/api\/themes?page=1",
+        "last": "https:\/\/open-academy.sk\/cms\/api\/themes?page=1",
+        "prev": null,
+        "next": null
+    },
+    "meta": {
+        "current_page": 1,
+        "from": 1,
+        "last_page": 1,
+        "path": "https:\/\/open-academy.sk\/cms\/api\/themes",
+        "per_page": 10,
+        "to": 3,
+        "total": 3
+    }
+}
