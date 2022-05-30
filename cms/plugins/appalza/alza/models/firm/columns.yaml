@@ -1,0 +1,19 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+    name:
+        label: Firm Name
+    wage:
+        label: Wage
+        type: number
+    location:
+        label: Location
+    description:
+        label: Description
+    jobs: 
+        label: Job

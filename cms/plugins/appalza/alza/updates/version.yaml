@@ -1,0 +1,10 @@
+1.0.1: First version of Alza
+1.0.2: 
+  - create firms table
+  - create_firms_table.php
+1.0.3:
+  - create jobs table
+  - create_jobs_table.php
+1.0.4:
+  - create many to many table
+  - create_firms_jobs_table.php

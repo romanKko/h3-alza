@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Job
+
+# Model Form Field configuration
+form: $/appalza/alza/models/job/fields.yaml
+
+# Model Class name
+modelClass: AppAlza\Alza\Models\Job
+
+# Default redirect location
+defaultRedirect: appalza/alza/jobs
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: appalza/alza/jobs/update/:id
+    redirectClose: appalza/alza/jobs
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: appalza/alza/jobs
+    redirectClose: appalza/alza/jobs
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

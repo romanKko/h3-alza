@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Firm
+
+# Model Form Field configuration
+form: $/appalza/alza/models/firm/fields.yaml
+
+# Model Class name
+modelClass: AppAlza\Alza\Models\Firm
+
+# Default redirect location
+defaultRedirect: appalza/alza/firms
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: appalza/alza/firms/update/:id
+    redirectClose: appalza/alza/firms
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: appalza/alza/firms
+    redirectClose: appalza/alza/firms
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

@@ -1,0 +1,15 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+    name:
+        label: Nazov
+    gender: 
+        label: Pohlavie
+    firms:
+        label: Firm name
+        type: relation
