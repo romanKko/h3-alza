@@ -8,17 +8,18 @@
       </div>
 
       <div class="head">
-        <img src="./img/expatriate.png" alt="" />
+        <img class="pfp" src="./img/expatriate.png" alt="" />
       </div>
 
       <div class="basic-info">
-        <ion-button @click="apply()">Apply</ion-button>
+        <ion-button  @click="apply()">Apply</ion-button>
         <p>Tel. c.: +421 921 837 293</p>
         <div class="plat">$ 1.000 - $ 2.000 / month</div>
       </div>
 
       <div class="content">
-        <p>
+       <div class="background ion-padding">
+        <p class="info">
           Do nášho tímu hľadáme junior, medior aj senior Java Fullstack developerov na inovatívne
           projekty v oblasti digitalizácie nemeckých samospráv a s tým súvisiace nastavovanie
           trendov v tejto oblasti. Sme súčasťou komunity, ktorá pracuje na spoločnom frameworku, s
@@ -27,8 +28,10 @@
           oprávnení a ďalšie. Naše produkty používajú zákazníci vo viacerých nemeckých veľkomestách
           ako napr. Berlín, Hamburg, alebo Essen, ale aj súkromné spoločnosti ako Volkswagen.
         </p>
-
-        <p>
+       </div>
+<br>
+        <div class="background ion-padding">
+        <p class="info">
           Pozícii vyhovujú uchádzači so vzdelaním stredoškolské s maturitou vysokoškolské I. stupňa
           vysokoškolské II. stupňa vysokoškolské III. stupňa Vzdelanie v odbore Informačné
           technológie Jazykové znalosti Anglický jazyk - Mierne pokročilý (B1) a Slovenský jazyk -
@@ -37,17 +40,21 @@
           Výhodou: • Solid, Clean Code, Design Patterns • Javascript • OSGI • Hibernate • HTML, CSS
           • Oracle • znalosť nemčiny
         </p>
+        </div>
       </div>
+      <the-footer />
     </ion-content>
   </ion-page>
 </template>
 
 <script>
 import TheHeader from '@/components/TheHeader.vue'
+import TheFooter from '@/components/TheFooter.vue'
 
 export default {
   components: {
-    TheHeader
+    TheHeader,
+    TheFooter
   },
 
   methods: {
@@ -75,6 +82,7 @@ export default {
   background-image: url(./img/office.webp);
   margin: 1rem 10vw;
   background-repeat: no-repeat;
+  height: 100% ;
 }
 
 #pfp {
@@ -90,9 +98,10 @@ export default {
 }
 
 .basic-info > div {
-  background-color: rgb(214, 133, 214);
+  background-color: rgba(119, 73, 248, 1);
   padding: 1rem;
   border-radius: 15px;
+  color: white;
 }
 
 .content {
@@ -100,4 +109,24 @@ export default {
   margin: 2rem 10vw;
   flex-direction: column;
 }
+
+ion-button{
+    min-width: 80px;
+}
+
+.pfp{
+    width: 226px;
+    margin-top: 480px;
+}
+
+.background{
+    background-color: rgba(119, 73, 248, 1);
+    border-radius: 4px;
+    
+}
+
+.info{
+    color: white;
+}
+
 </style>
