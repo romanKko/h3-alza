@@ -6,6 +6,7 @@
       <!-- docasne linky aby sme to nemuseli nonstop pisat -->
       <a href="/onboarding">Onboarding</a>
       <a href="/detailstaze">Detail Staze</a>
+      <a href="/detail-stazistu">Detail Stazistu</a>
 
       <ion-title>SusAlza 3</ion-title>
 
