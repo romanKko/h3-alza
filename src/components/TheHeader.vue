@@ -4,12 +4,13 @@
       <img src="../views/img/expatriate.png" id="expat" />
 
       <!-- docasne linky aby sme to nemuseli nonstop pisat -->
+      <a href="/onboarding">Onboarding</a>
+      <a href="/detailstaze">Detail Staze</a>
+      <a href="/detail-stazistu">Detail Stazistu</a>
       <div slot="end" class="ion-m-3">
         <a class="nav-text" href="/onboarding">Onboarding</a>
         <a class="nav-text ion-margin" href="/detailstaze">Detail Staze</a>
       </div>
-
-    
           <ion-title slot="start" class="ion-title">SusAlza 3</ion-title>
       
       <ion-button class="sign-up" slot="end" @click="signUp()">Sign Up</ion-button>
