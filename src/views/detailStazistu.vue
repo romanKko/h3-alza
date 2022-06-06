@@ -1,8 +1,7 @@
 <template>
   <ion-page class="neviem">
-    <TheHeader />
-
     <ion-content>
+      <the-header />
       <div class="width">
         <ion-list lines="none" class="vsetko">
           <ion-item>
@@ -108,9 +107,8 @@
           </div>
         </div>
       </div>
+      <The-footer />
     </ion-content>
-
-    <TheFooter />
   </ion-page>
 </template>
 
