@@ -9,20 +9,11 @@
         :style="{ marginRight: '4px', fontSize: '42px', marginTop: '10px', color: '#A760FF' }"
       ></ion-icon>
 
-<<<<<<< HEAD
-      <div slot="end" class="ion-m-3">
-        <a class="nav-text" href="/onboarding">Onboarding</a>
-        <a class="nav-text ion-margin" href="/detailstaze">Detail Staze</a>
-        <a class="nav-text ion-margin" href="/detail-stazistu">Detail Stazistu</a>
-      </div>
-      <ion-title slot="start" class="ion-title">SusAlza 3</ion-title>
-=======
       <ion-title>WorkHub</ion-title>
       <a href="/onboarding">Onboarding</a>
       <a class="ion-margin" href="/detail-staze">Detail Staze</a>
       <a class="ion-margin" href="/detail-stazistu">Detail Stazistu</a>
       <a class="ion-margin" href="/list-stazistov">List Stazistov</a>
->>>>>>> b9c4d4f5897b420ba321d36834110ff2ff58adc1
 
       <ion-button class="sign-up" slot="end" @click="signUp()" fill="outline">Sign Up</ion-button>
     </ion-toolbar>
