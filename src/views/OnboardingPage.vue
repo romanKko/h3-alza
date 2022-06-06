@@ -211,6 +211,15 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+ion-card-header {
+  padding-bottom: 0px !important;
+}
+
+ion-card-title {
+  color: white;
+  font-weight: 500;
+}
+
 .head {
   display: flex;
   justify-content: center;
@@ -311,15 +320,6 @@ export default {
   border-bottom: 1px solid rgba(45, 130, 212, 1);
   margin: 10px 0;
   width: 100%;
-}
-
-ion-card-header {
-  padding-bottom: 0px !important;
-}
-
-ion-card-title {
-  color: white;
-  font-weight: 500;
 }
 
 // ---- SPONSORS ----
