@@ -1,11 +1,113 @@
 <template>
-	<ion-footer>
-		<ion-toolbar color="secondary">
-			<ion-title>Footer</ion-title>
-		</ion-toolbar>
-	</ion-footer>
+  <ion-footer>
+    <div class="footer" :style="{ marginTop: '2rem' }">
+      <div id="links">
+        <div class="ft-content">
+          <h2 class="ft-left-title">Menu</h2>
+          <a class="link" href="/"> Home </a>
+          <a class="link" href="/campaigns"> Explore </a>
+          <a class="link" href="/contact"> Contact </a>
+        </div>
+
+        <div class="ft-content">
+          <h2 class="ft-left-title">Categories</h2>
+          <a class="link" href="/"> Technology </a>
+          <a class="link" href="/"> Medicine </a>
+          <a class="link" href="/"> Education </a>
+          <a class="link" href="/"> Virtual </a>
+          <a class="link" href="/"> Other </a>
+        </div>
+
+        <div class="ft-content">
+          <h2 class="ft-left-title">About</h2>
+          <a class="link" href="/"> Backing & Creating campaigns </a>
+          <a class="link" href="/"> Terms of Service </a>
+          <a class="link" href="/"> Help & Support </a>
+          <a class="link" href="/"> Trust & Safety </a>
+        </div>
+      </div>
+
+      <div class="ft-content ft-name-section">
+        <h1>Greenlight</h1>
+        <p> Boost the future generation. A project made for MIT Blueprint 2022 by blueshark. </p>
+        <p :style="{ marginTop: '2rem' }">Enjoy the rest of your day!</p>
+      </div>
+    </div>
+  </ion-footer>
 </template>
 
 <style lang="scss" scoped>
+.footer {
+  padding: 2rem 0 3rem 0;
+  background-color: white;
+  border-top: 1px rgb(231, 231, 231) solid;
+  color: gray;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-content: space-between;
+}
 
+.ft-content {
+  max-width: 20rem;
+  margin-left: 2rem;
+}
+
+#links {
+  display: flex;
+}
+
+.ft-name-section {
+  margin-left: 8rem;
+  @media (max-width: 912px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+  }
+}
+
+.link {
+  transition: color 150ms;
+  color: inherit;
+  display: block;
+  text-decoration: none;
+  margin-top: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1em;
+}
+
+.link:hover {
+  transition: color 150ms;
+  color: rgb(195, 195, 195);
+}
+
+.ft-content p {
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.ft-content > h1 {
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 1.5rem;
+  color: rgb(61, 61, 61);
+}
+
+.ft-content > h2 {
+  letter-spacing: 0.15em;
+  font-size: 1.2rem;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgb(61, 61, 61);
+}
+
+.ft-left-title {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 </style>
