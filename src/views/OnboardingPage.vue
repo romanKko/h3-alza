@@ -11,7 +11,7 @@
             by calling the verifyMeta method again.</p
           >
         </div>
-        <img src="./img/onboarding.svg" alt="" />
+        <img src="./img/onboarding.svg" alt="" class="onboarding-img" />
       </div>
 
       <div class="searchbar">
@@ -246,6 +246,10 @@ ion-card-title {
 
 .searchbar {
   margin: 1rem 25vw 5rem 25vw;
+}
+
+.onboarding-img {
+  width: 50vw;
 }
 
 .categories {
