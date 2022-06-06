@@ -6,12 +6,9 @@
       <div class="head">
         <div class="head-title">
           <h1>SusAlza3</h1>
-          <p
-            >Use the GUI to enable/disable the meta access. You can check if meta access is enabled
-            by calling the verifyMeta method again.</p
-          >
+          <p>Adam Brix je nas styler, designer, a influencer.</p>
         </div>
-        <img src="./img/onboarding.svg" alt="" class="onboarding-img" />
+        <img src="./img/elastic.png" alt="" class="onboarding-img" />
       </div>
 
       <div class="searchbar">
@@ -249,7 +246,9 @@ ion-card-title {
 }
 
 .onboarding-img {
-  width: 50vw;
+  width: 40vw;
+  margin-left: 7rem;
+  margin-bottom: 3rem;
 }
 
 .categories {
