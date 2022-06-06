@@ -1,7 +1,8 @@
 <template>
   <ion-page style="--ion-background-color: white">
+    <the-header />
+
     <ion-content :fullscreen="true">
-      <the-header />
       <div class="title">
         <h1>Frontend Developer</h1>
       </div>
@@ -13,7 +14,7 @@
       <div class="basic-info">
         <ion-button @click="apply()">Apply</ion-button>
         <p>Tel. c.: +421 921 837 293</p>
-        <div class="plat">$ 1.000 - $ 2.000 / month</div>
+        <div class="plat">$ 1.000 - $ 2.000 / monthFf</div>
       </div>
 
       <div class="content">
@@ -83,9 +84,6 @@ export default {
   margin: 1rem 10vw;
   background-repeat: no-repeat;
   height: 100%;
-}
-
-#pfp {
 }
 
 .basic-info {
