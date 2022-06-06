@@ -1,8 +1,7 @@
 <template>
   <ion-page style="--ion-background-color: white">
-    <the-header />
-
     <ion-content :fullscreen="true">
+      <the-header />
       <div class="title">
         <h1>Frontend Developer</h1>
       </div>
@@ -12,34 +11,35 @@
       </div>
 
       <div class="basic-info">
-        <ion-button  @click="apply()">Apply</ion-button>
+        <ion-button @click="apply()">Apply</ion-button>
         <p>Tel. c.: +421 921 837 293</p>
         <div class="plat">$ 1.000 - $ 2.000 / month</div>
       </div>
 
       <div class="content">
-       <div class="background ion-padding">
-        <p class="info">
-          Do nášho tímu hľadáme junior, medior aj senior Java Fullstack developerov na inovatívne
-          projekty v oblasti digitalizácie nemeckých samospráv a s tým súvisiace nastavovanie
-          trendov v tejto oblasti. Sme súčasťou komunity, ktorá pracuje na spoločnom frameworku, s
-          cieľom posunúť digitálnu komunikáciu občana so štátom na novú úroveň. Aktuálne vytvárame
-          nové systémy pre prihlasovanie a evidenciu motorových vozidiel, evidenciu vodičských
-          oprávnení a ďalšie. Naše produkty používajú zákazníci vo viacerých nemeckých veľkomestách
-          ako napr. Berlín, Hamburg, alebo Essen, ale aj súkromné spoločnosti ako Volkswagen.
-        </p>
-       </div>
-<br>
         <div class="background ion-padding">
-        <p class="info">
-          Pozícii vyhovujú uchádzači so vzdelaním stredoškolské s maturitou vysokoškolské I. stupňa
-          vysokoškolské II. stupňa vysokoškolské III. stupňa Vzdelanie v odbore Informačné
-          technológie Jazykové znalosti Anglický jazyk - Mierne pokročilý (B1) a Slovenský jazyk -
-          Stredne pokročilý (B2) Pozícia je vhodná pre absolventa Áno Osobnostné predpoklady a
-          zručnosti • Java – pokročilý • SQL – pokročilý • zodpovednosť a chuť pracovať v tíme
-          Výhodou: • Solid, Clean Code, Design Patterns • Javascript • OSGI • Hibernate • HTML, CSS
-          • Oracle • znalosť nemčiny
-        </p>
+          <p class="info">
+            Do nášho tímu hľadáme junior, medior aj senior Java Fullstack developerov na inovatívne
+            projekty v oblasti digitalizácie nemeckých samospráv a s tým súvisiace nastavovanie
+            trendov v tejto oblasti. Sme súčasťou komunity, ktorá pracuje na spoločnom frameworku, s
+            cieľom posunúť digitálnu komunikáciu občana so štátom na novú úroveň. Aktuálne vytvárame
+            nové systémy pre prihlasovanie a evidenciu motorových vozidiel, evidenciu vodičských
+            oprávnení a ďalšie. Naše produkty používajú zákazníci vo viacerých nemeckých
+            veľkomestách ako napr. Berlín, Hamburg, alebo Essen, ale aj súkromné spoločnosti ako
+            Volkswagen.
+          </p>
+        </div>
+        <br />
+        <div class="background ion-padding">
+          <p class="info">
+            Pozícii vyhovujú uchádzači so vzdelaním stredoškolské s maturitou vysokoškolské I.
+            stupňa vysokoškolské II. stupňa vysokoškolské III. stupňa Vzdelanie v odbore Informačné
+            technológie Jazykové znalosti Anglický jazyk - Mierne pokročilý (B1) a Slovenský jazyk -
+            Stredne pokročilý (B2) Pozícia je vhodná pre absolventa Áno Osobnostné predpoklady a
+            zručnosti • Java – pokročilý • SQL – pokročilý • zodpovednosť a chuť pracovať v tíme
+            Výhodou: • Solid, Clean Code, Design Patterns • Javascript • OSGI • Hibernate • HTML,
+            CSS • Oracle • znalosť nemčiny
+          </p>
         </div>
       </div>
       <the-footer />
@@ -82,7 +82,7 @@ export default {
   background-image: url(./img/office.webp);
   margin: 1rem 10vw;
   background-repeat: no-repeat;
-  height: 100% ;
+  height: 100%;
 }
 
 #pfp {
@@ -110,23 +110,21 @@ export default {
   flex-direction: column;
 }
 
-ion-button{
-    min-width: 80px;
+ion-button {
+  min-width: 80px;
 }
 
-.pfp{
-    width: 226px;
-    margin-top: 480px;
+.pfp {
+  width: 226px;
+  margin-top: 480px;
 }
 
-.background{
-    background-color: rgba(119, 73, 248, 1);
-    border-radius: 4px;
-    
+.background {
+  background-color: rgba(119, 73, 248, 1);
+  border-radius: 4px;
 }
 
-.info{
-    color: white;
+.info {
+  color: white;
 }
-
 </style>

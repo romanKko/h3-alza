@@ -11,7 +11,7 @@
             by calling the verifyMeta method again.</p
           >
         </div>
-        <img src="./img/onboarding.svg" alt="" />
+        <img src="./img/onboarding.svg" alt="" class="onboarding-img" />
       </div>
 
       <div class="searchbar">
@@ -211,6 +211,15 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+ion-card-header {
+  padding-bottom: 0px !important;
+}
+
+ion-card-title {
+  color: white;
+  font-weight: 500;
+}
+
 .head {
   display: flex;
   justify-content: center;
@@ -237,6 +246,10 @@ export default {
 
 .searchbar {
   margin: 1rem 25vw 5rem 25vw;
+}
+
+.onboarding-img {
+  width: 50vw;
 }
 
 .categories {
@@ -311,15 +324,6 @@ export default {
   border-bottom: 1px solid rgba(45, 130, 212, 1);
   margin: 10px 0;
   width: 100%;
-}
-
-ion-card-header {
-  padding-bottom: 0px !important;
-}
-
-ion-card-title {
-  color: white;
-  font-weight: 500;
 }
 
 // ---- SPONSORS ----

@@ -1,7 +1,6 @@
 <template>
   <ion-page style="--ion-background-color: white">
     <the-header />
-
     <ion-content :fullscreen="true"> </ion-content>
     <the-footer />
   </ion-page>

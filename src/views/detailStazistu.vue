@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <ion-page>
     <TheHeader />
 
@@ -6,6 +7,16 @@
       
         <ion-list lines="none">
       
+=======
+  <ion-page class="neviem">
+    <ion-content>
+      <the-header />
+      <div class="width">
+        <ion-list lines="none" class="vsetko">
+          <ion-item>
+            <h1 class="size ion-margin-top">user.name</h1>
+          </ion-item>
+>>>>>>> 95c12a73b70cb3d82b2b58cddc49e492a98c3082
           <ion-item>
             <div class="background">
             <img
@@ -108,9 +119,17 @@
                 <ion-button>Kontaktovat</ion-button>
               </ion-col>
             </ion-row>
+<<<<<<< HEAD
     </ion-content>
 
     
+=======
+          </div>
+        </div>
+      </div>
+      <The-footer />
+    </ion-content>
+>>>>>>> 95c12a73b70cb3d82b2b58cddc49e492a98c3082
   </ion-page>
 </template>
 
