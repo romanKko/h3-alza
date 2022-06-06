@@ -6,6 +6,7 @@
       <div slot="end" class="ion-m-3">
         <a class="nav-text" href="/onboarding">Onboarding</a>
         <a class="nav-text ion-margin" href="/detailstaze">Detail Staze</a>
+        <a class="nav-text ion-margin" href="/detail-stazistu">Detail Stazistu</a>
       </div>
       <ion-title slot="start" class="ion-title">SusAlza 3</ion-title>
 
