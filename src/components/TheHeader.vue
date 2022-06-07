@@ -5,7 +5,7 @@
         <ion-back-button></ion-back-button>
       </ion-buttons>
       <ion-icon
-        :icon="logoTableau"
+        :icon="logoAmplify"
         :style="{ marginRight: '4px', fontSize: '42px', marginTop: '10px', color: '#A760FF' }"
       ></ion-icon>
 
@@ -25,7 +25,7 @@
 
 <script>
 import { IonHeader } from '@ionic/vue'
-import { logoTableau } from 'ionicons/icons'
+import { logoAmplify } from 'ionicons/icons'
 
 export default {
   components: {
@@ -34,7 +34,7 @@ export default {
 
   setup() {
     return {
-      logoTableau
+      logoAmplify
     }
   },
 

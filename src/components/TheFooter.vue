@@ -6,21 +6,18 @@
           <h2 class="ft-left-title">Menu</h2>
           <a class="link" href="/"> Home </a>
           <a class="link" href="/campaigns"> Explore </a>
-          <a class="link" href="/contact"> Contact </a>
+          <a class="link" href="/contact"> FAQ </a>
         </div>
 
         <div class="ft-content">
           <h2 class="ft-left-title">Categories</h2>
-          <a class="link" href="/"> Technology </a>
-          <a class="link" href="/"> Medicine </a>
-          <a class="link" href="/"> Education </a>
-          <a class="link" href="/"> Virtual </a>
-          <a class="link" href="/"> Other </a>
+          <a class="link" href="/"> Staze </a>
+          <a class="link" href="/"> Stazisti </a>
+          <a class="link" href="/"> Firmy </a>
         </div>
 
         <div class="ft-content">
           <h2 class="ft-left-title">About</h2>
-          <a class="link" href="/"> Backing & Creating campaigns </a>
           <a class="link" href="/"> Terms of Service </a>
           <a class="link" href="/"> Help & Support </a>
           <a class="link" href="/"> Trust & Safety </a>
@@ -28,8 +25,12 @@
       </div>
 
       <div class="ft-content ft-name-section">
-        <h1>Greenlight</h1>
-        <p> Boost the future generation. A project made for MIT Blueprint 2022 by blueshark. </p>
+        <h1>SusAlza3</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore cupiditate est quam
+          reiciendis itaque pariatur ea adipisci neque, quisquam saepe explicabo voluptatem
+          molestias ab fuga repellat excepturi temporibus, suscipit ullam.
+        </p>
         <p :style="{ marginTop: '2rem' }">Enjoy the rest of your day!</p>
       </div>
     </div>
