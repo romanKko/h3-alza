@@ -127,7 +127,7 @@ export default {
 
   async created() {
     try {
-      this.interns = await this.$axios.get_data('/v1/users')
+      this.interns = await this.$axios.get_data('/firms') //users, jobs
       console.log(this.interns)
     } catch (error) {
       // this.$toast.error(error)
