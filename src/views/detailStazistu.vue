@@ -3,12 +3,10 @@
     <ion-content>
       <the-header />
       <div class="width">
-        <ion-list lines="none" class="vsetko">
-          <ion-item>
-            <h1 class="size ion-margin-top">user.name</h1>
-          </ion-item>
+        <ion-list lines="none" class="vsetko" v-for="intern in interns" :key="intern.id">
           <ion-item>
             <div class="background">
+				<h1>{{ intern.meno }}</h1>
               <img
                 class="ion-margin-top sirka"
                 src="@/views/img/stazista.jpg"
@@ -16,99 +14,7 @@
               />
             </div>
           </ion-item>
-
-          <ion-item>
-            <h1>Roland Csibrei</h1>
-          </ion-item>
-
-          <ion-item>
-            <ion-text
-              >Bavi ma programovat a chcem sa v tom zlepsovat. mam rad zvieratka a hokej. v
-              programovani nemam moc velku prax ale som ochohotny tomu obetovat vsetok volny cas a
-              byt v tom najlepsi
-            </ion-text>
-          </ion-item>
         </ion-list>
-
-        <ion-row>
-          <ion-col>
-            <h1>Miesto staze</h1>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <p>Bratislava, alebo remote odkialkolvek z domu</p>
-          </ion-col>
-        </ion-row>
-
-        <ion-row>
-          <ion-col>
-            <h1>Vzdelanie</h1>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <p>Halova, Skola pre mentalne retardovane deti</p>
-          </ion-col>
-        </ion-row>
-
-        <ion-row>
-          <ion-col>
-            <h1>Pozadovany plat</h1>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <p>Od 5E na hodinu</p>
-          </ion-col>
-        </ion-row>
-
-        <ion-row>
-          <ion-col>
-            <h1>Prax</h1>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <p>Wezeo, IBM, Tvoja mamka s.r.o.</p>
-          </ion-col>
-        </ion-row>
-
-        <ion-row>
-          <ion-col>
-            <h1>Skills</h1>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <p>C++, C, Python, Web Dev</p>
-          </ion-col>
-        </ion-row>
-
-        <ion-row>
-          <ion-col>
-            <h1>Licencie a certifikaty</h1>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <p>Cisco CCNA 1</p>
-          </ion-col>
-        </ion-row>
-
-        <ion-row>
-          <ion-col>
-            <h1>Kontakt</h1>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <p>Email: pojebSaBugala@gmail.com</p>
-            <p>Number: 6969699969669</p>
-            <p>IG: ujo_matej</p>
-            <ion-button>Kontaktovat</ion-button>
-          </ion-col>
-        </ion-row>
       </div>
       <the-footer />
     </ion-content>
@@ -125,9 +31,15 @@ export default {
     TheFooter
   },
 
+  data() {
+	return {
+			interns: null,
+		}
+	},
+
   async created() {
     try {
-      this.interns = await this.$axios.get_data('/firms') //users, jobs
+      this.interns = await this.$axios.get_data('/users') //firms, jobs
       console.log(this.interns)
     } catch (error) {
       // this.$toast.error(error)
