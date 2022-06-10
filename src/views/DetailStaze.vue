@@ -12,8 +12,8 @@
 
       <div class="basic-info">
         <ion-button @click="apply()">Apply</ion-button>
-        <p>Tel. c.: +421 921 837 293</p>
-        <div class="plat">$ 1.000 - $ 2.000 / month</div>
+        <p class="kontakt">Tel. c.: +421 921 837 293</p>
+        <div class="plat">$ 1.000 - $ 2.000 / monthFf</div>
       </div>
 
       <div class="content">
@@ -85,9 +85,6 @@ export default {
   height: 100%;
 }
 
-#pfp {
-}
-
 .basic-info {
   display: flex;
   flex-direction: row;
@@ -98,7 +95,6 @@ export default {
 }
 
 .basic-info > div {
-  background-color: rgba(119, 73, 248, 1);
   padding: 1rem;
   border-radius: 15px;
   color: white;
@@ -119,12 +115,6 @@ ion-button {
   margin-top: 480px;
 }
 
-.background {
-  background-color: rgba(119, 73, 248, 1);
-  border-radius: 4px;
-}
 
-.info {
-  color: white;
-}
+
 </style>
