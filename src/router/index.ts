@@ -3,9 +3,10 @@ import { RouteRecordRaw } from 'vue-router'
 import HomePage from '../views/HomePage.vue'
 import Onboarding from '../views/OnboardingPage.vue'
 import DetailStaze from '../views/DetailStaze.vue'
-import DetailStazistu from '../views/detailStazistu.vue'
+import DetailStazistu from '../views/DetailStazistu.vue'
 import ListStazistov from '../views/ListStazistov.vue'
 import NotFound from '../views/NotFound.vue'
+import SignUp from '../views/SignUp.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -35,6 +36,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/list-stazistov',
     name: 'List Stazistov',
     component: ListStazistov
+  },
+  {
+    path: '/signup',
+    name: 'Sign Up',
+    component: SignUp
   },
   {
     path: '/:pathMatch(.*)*',

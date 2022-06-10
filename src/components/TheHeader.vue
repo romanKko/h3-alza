@@ -40,7 +40,6 @@ export default {
 
   methods: {
     signUp() {
-      alert('signup')
       this.$router.push({ name: 'Sign Up' })
     }
   }
