@@ -17,7 +17,7 @@
       </div>
 
       <div class="content">
-        <div class="background ion-padding">
+        <div class="background ion-padding border-radius: 50px">
           <p class="info">
             Do nášho tímu hľadáme junior, medior aj senior Java Fullstack developerov na inovatívne
             projekty v oblasti digitalizácie nemeckých samospráv a s tým súvisiace nastavovanie
