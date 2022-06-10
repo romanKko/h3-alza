@@ -1,8 +1,7 @@
 <template>
   <ion-page style="--ion-background-color: white">
-    <the-header />
-
     <ion-content :fullscreen="true">
+      <the-header />
       <div class="title">
         <h1>Frontend Developer</h1>
       </div>
