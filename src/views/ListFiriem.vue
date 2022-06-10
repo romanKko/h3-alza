@@ -58,20 +58,21 @@
       </ion-grid>
       <ion-grid>
         <ion-row>
-          <ion-col size="4" class="width" v-for="intern in interns" :key="intern.id">
+          <ion-col size="4" class="width" v-for="firm in firms" :key="firm.id">
             <ion-card>
               <img src="./img/staz.png" />
               <ion-card-header class="d-flex">
-                <ion-card-title class="name">{{ intern.meno }}</ion-card-title>
+                <ion-card-title class="name">{{ firm.name }}</ion-card-title>
                 <ion-icon class="icon" :icon="heartOutline"></ion-icon>
               </ion-card-header> 
               <ion-card-content>
-                Vek: {{ intern.vek }}
+                Lokacia firmy: {{ firm.location }}
               </ion-card-content>
               <hr class="hr" />
-              <ion-card-content class="info">Zameranie: {{ intern.vzdelanie }} </ion-card-content>
+              <ion-card-content class="info">Ponukany plat: {{ firm.wage }} </ion-card-content>
               <hr class="hr" />
-              <ion-card-content class="info">Lokacia: {{ intern.bydlisko }}</ion-card-content>
+              <ion-card-content class="info">
+                Popis: {{ firm.description }}</ion-card-content>
               <hr class="hr" />
               <ion-card-content class="buttons">
                 <ion-button> Zobraziť profil </ion-button>
@@ -107,14 +108,14 @@ export default {
       heartOutline,
       arrowBackOutline,
       arrowForwardOutline,
-      interns: null
+      firms: null
     }
   },
 
     async created() {
     try {
-      this.interns = await this.$axios.get_data('/users')
-      console.log(this.interns)
+      this.firms = await this.$axios.get_data('/firms')
+      console.log(this.firms)
     } catch (error) {
       //this.$toast.error(error)
     }
