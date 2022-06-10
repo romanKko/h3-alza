@@ -5,6 +5,7 @@ import Onboarding from '../views/OnboardingPage.vue'
 import DetailStaze from '../views/DetailStaze.vue'
 import DetailStazistu from '../views/DetailStazistu.vue'
 import ListStazistov from '../views/ListStazistov.vue'
+import ListFiriem from '../views/ListFiriem.vue'
 import NotFound from '../views/NotFound.vue'
 import SignUp from '../views/SignUp.vue'
 
@@ -41,6 +42,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/signup',
     name: 'Sign Up',
     component: SignUp
+  },
+  {
+    path: '/list-firiem',
+    name: 'List Firiem',
+    component: ListFiriem
   },
   {
     path: '/:pathMatch(.*)*',

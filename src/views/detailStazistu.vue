@@ -118,7 +118,8 @@ export default {
   data() {
     return {
       heartOutline,
-      homeOutline
+      homeOutline,
+      interns: null
     }
   },
 
@@ -127,14 +128,6 @@ export default {
       logoStackoverflow,
       logoApple,
       logoJavascript
-    }
-  },
-
-  async created() {
-    try {
-      this.interns = await this.$axios.get_data('interns')
-    } catch (error) {
-      this.$toast.error(error)
     }
   }
 }
@@ -155,10 +148,12 @@ export default {
   display: flex;
   flex-direction: column;
 }
+.fotka {
+  display: flex;
+  flex-direction: column;
+}
 
 .name {
-  display: flex;
-
   align-items: center;
 }
 

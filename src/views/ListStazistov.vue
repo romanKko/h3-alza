@@ -57,23 +57,19 @@
       </ion-grid>
       <ion-grid>
         <ion-row>
-          <ion-col size="4" class="width" v-for="card in 12" :key="card">
+          <ion-col size="4" class="width" v-for="intern in interns" :key="intern.id">
             <ion-card>
               <img src="./img/staz.png" />
               <ion-card-header class="d-flex">
-                <ion-card-title class="name">Roland Csibrei</ion-card-title>
+                <ion-card-title class="name">{{ intern.meno }}</ion-card-title>
                 <ion-icon class="icon" :icon="heartOutline"></ion-icon>
               </ion-card-header>
-              <ion-card-content>
-                Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was
-                named the capital of the Wisconsin Territory in 1836.
-              </ion-card-content>
+              <ion-card-content> Vek: {{ intern.vek }} </ion-card-content>
               <hr class="hr" />
-              <ion-card-content class="info"> Front-end </ion-card-content>
+              <ion-card-content class="info">Zameranie: {{ intern.vzdelanie }} </ion-card-content>
               <hr class="hr" />
-              <ion-card-content class="info"> Dunajska Streda </ion-card-content>
+              <ion-card-content class="info">Lokacia: {{ intern.bydlisko }}</ion-card-content>
               <hr class="hr" />
-              <ion-card-content class="info"> 5$ </ion-card-content>
               <ion-card-content class="buttons">
                 <ion-button> Zobraziť profil </ion-button>
                 <ion-button> Kontaktovať </ion-button>
@@ -107,7 +103,17 @@ export default {
     return {
       heartOutline,
       arrowBackOutline,
-      arrowForwardOutline
+      arrowForwardOutline,
+      interns: null
+    }
+  },
+
+  async created() {
+    try {
+      this.interns = await this.$axios.get_data('/users')
+      console.log(this.interns)
+    } catch (error) {
+      //this.$toast.error(error)
     }
   }
 }

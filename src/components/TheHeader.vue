@@ -16,6 +16,7 @@
         <a class="ion-margin" href="/detail-staze">Detail Staze</a>
         <a class="ion-margin" href="/detail-stazistu">Detail Stazistu</a>
         <a class="ion-margin" href="/list-stazistov">List Stazistov</a>
+        <a class="ion-margin" href="/list-firiem">List Firiem</a>
       </div>
 
       <ion-button class="sign-up" @click="signUp()" fill="outline">Sign Up</ion-button>
