@@ -3,7 +3,7 @@
     <ion-toolbar>
       <div class="header-wrapper d-flex justify-between">
         <div class="d-flex justify-between">
-          <h2>WorkHub</h2>
+          <h2 @click="routeTo('Onboarding')" id="whub-title">WorkHub</h2>
           <ion-icon :icon="logoAmplify" :style="{ fontSize: '40px', color: '#A760FF' }"></ion-icon>
           <div class="links">
             <ul class="d-flex">
@@ -24,7 +24,9 @@
         </div>
 
         <div class="d-flex ion-justify-content-around">
-          <ion-button class="sign-up" @click="signUp()" fill="outline">Prihlásiť sa</ion-button>
+          <ion-button class="sign-up" @click="routeTo('Sign Up')" fill="outline"
+            >Prihlásiť sa</ion-button
+          >
           <ion-icon @click="openMenu()" class="menu-button" style="display: none" :icon="menu" />
         </div>
       </div>
@@ -51,8 +53,8 @@ export default {
   },
 
   methods: {
-    signUp() {
-      this.$router.push({ name: 'Sign Up' })
+    routeTo(path) {
+      this.$router.push({ name: path })
     },
 
     openMenu() {
@@ -66,6 +68,10 @@ export default {
 #logo {
   width: 50px;
   height: 50px;
+}
+
+#whub-title {
+  cursor: pointer;
 }
 
 .header-wrapper {
