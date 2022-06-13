@@ -25,7 +25,7 @@
   </ion-header>
 </template>
 
-<script>
+<script lang="ts">
 import { IonHeader } from '@ionic/vue'
 import { logoAmplify } from 'ionicons/icons'
 
