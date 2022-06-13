@@ -122,7 +122,4 @@ ion-button {
   width: 226px;
   margin-top: 480px;
 }
-
-
-
 </style>

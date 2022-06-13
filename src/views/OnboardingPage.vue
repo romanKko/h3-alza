@@ -5,7 +5,7 @@
 
       <div class="head">
         <div class="head-title">
-          <h1>SusAlza3</h1>
+          <h1>WorkHub</h1>
           <p>Adam Brix je nas styler, designer, a influencer.</p>
         </div>
         <img src="./img/elastic.png" alt="" class="onboarding-img" />

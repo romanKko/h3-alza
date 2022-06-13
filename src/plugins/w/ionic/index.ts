@@ -8,7 +8,7 @@ import {
 	IonIcon, IonList, IonTitle, IonMenu, IonRouterOutlet, IonMenuButton, IonSegment, IonSegmentButton, IonVirtualScroll,
 	IonTextarea, IonSearchbar, IonRefresherContent, IonRefresher, IonInfiniteScrollContent, IonInfiniteScroll, IonAvatar,
 	IonModal, IonRadioGroup, IonRadio, IonNote, IonCard, IonCardContent, IonTabBar, IonTabButton, IonMenuToggle, IonFab,
-	IonFabButton, IonReorderGroup, IonReorder, IonFabList, IonSelect, IonSelectOption, IonToggle, IonBadge, IonChip, IonTabs, IonItemGroup, IonThumbnail, IonItemSliding, IonItemOption, IonItemOptions, IonImg, IonSkeletonText, IonSpinner
+	IonFabButton, IonReorderGroup, IonReorder, IonFabList, IonSelect, IonSelectOption, IonToggle, IonBadge, IonChip, IonTabs, IonItemGroup, IonThumbnail, IonItemSliding, IonItemOption, IonItemOptions, IonImg, IonSkeletonText, IonSpinner, IonCardHeader, IonCardTitle
 } from '@ionic/vue'
 
 export default {
@@ -76,6 +76,8 @@ export default {
 		app.component('ion-toggle', IonToggle)
 		app.component('ion-badge', IonBadge)
 		app.component('ion-chip', IonChip),
-		app.component('ion-tabs', IonTabs)
+		app.component('ion-tabs', IonTabs),
+		app.component('ion-card-header', IonCardHeader),
+		app.component('ion-card-title', IonCardTitle)
 	}
 }
