@@ -1,6 +1,6 @@
 <template>
   <ion-footer>
-    <div class="footer" :style="{ marginTop: '2rem' }">
+    <div class="footer">
       <div id="links">
         <div class="ft-content">
           <h2 class="ft-left-title">Menu</h2>
@@ -46,6 +46,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: nowrap;
+  // margin-top: 2rem;
   align-content: space-between;
 }
 

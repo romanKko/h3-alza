@@ -10,10 +10,10 @@
             <ion-item>
               <ion-label>Typ</ion-label>
               <ion-select multiple="true">
-                <ion-select-option value="">frontend</ion-select-option>
-                <ion-select-option value="">backend</ion-select-option>
-                <ion-select-option value="">styl</ion-select-option>
-                <ion-select-option value="">ine</ion-select-option>
+                <ion-select-option value="">Front-End</ion-select-option>
+                <ion-select-option value="">Backend</ion-select-option>
+                <ion-select-option value="">Full Stack</ion-select-option>
+                <ion-select-option value="">Iné</ion-select-option>
               </ion-select>
             </ion-item>
           </ion-col>
@@ -22,10 +22,10 @@
             <ion-item>
               <ion-label>Mesto</ion-label>
               <ion-select multiple="true">
-                <ion-select-option value="">Dunajska</ion-select-option>
-                <ion-select-option value="">Gyor</ion-select-option>
-                <ion-select-option value="">Dedo</ion-select-option>
                 <ion-select-option value="">Bratislava</ion-select-option>
+                <ion-select-option value="">Banská Bystrica</ion-select-option>
+                <ion-select-option value="">Remote</ion-select-option>
+                <ion-select-option value="">Other</ion-select-option>
               </ion-select>
             </ion-item>
           </ion-col>
@@ -34,10 +34,11 @@
             <ion-item>
               <ion-label>Plat</ion-label>
               <ion-select multiple="true">
-                <ion-select-option value="">neviem</ion-select-option>
-                <ion-select-option value="">neviem</ion-select-option>
-                <ion-select-option value="">neviem</ion-select-option>
-                <ion-select-option value="">neviem</ion-select-option>
+                <ion-select-option value="">Do €200</ion-select-option>
+                <ion-select-option value="">Do €400</ion-select-option>
+                <ion-select-option value="">Do €1,000</ion-select-option>
+                <ion-select-option value="">Nad €1,000</ion-select-option>
+                <ion-select-option value="">Flexibilná</ion-select-option>
               </ion-select>
             </ion-item>
           </ion-col>
@@ -46,10 +47,10 @@
             <ion-item>
               <ion-label>Popularita</ion-label>
               <ion-select multiple="true">
-                <ion-select-option value="">Najoblubenejsie</ion-select-option>
-                <ion-select-option value="">Najnovsie</ion-select-option>
-                <ion-select-option value="">Odporucane</ion-select-option>
-                <ion-select-option value="">Exoticke zeny</ion-select-option>
+                <ion-select-option value="">Najoblúbenejšie</ion-select-option>
+                <ion-select-option value="">Najnovšie</ion-select-option>
+                <ion-select-option value="">Relevantné</ion-select-option>
+                <ion-select-option value="">Podľa počtu zamestnancov</ion-select-option>
               </ion-select>
             </ion-item>
           </ion-col>

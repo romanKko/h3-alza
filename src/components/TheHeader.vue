@@ -6,7 +6,7 @@
           <h2><a href="/onboarding">WorkHub</a></h2>
           <ion-icon
             :icon="logoAmplify"
-            :style="{ fontSize: '40px', color: '#A760FF' }"
+            :style="{ fontSize: '40px', color: '#4285F4' }"
           ></ion-icon>
           <div class="links">
             <ul class="d-flex">
@@ -28,7 +28,7 @@
 
         <div class="d-flex ion-justify-content-around">
 
-          <ion-button class="sign-up button-native" href="login" fill="outline">Prihlásiť sa</ion-button>
+          <ion-button class="sign-up button-native" @click="signUp" fill="outline">Prihlásiť sa</ion-button>
           <ion-icon @click="openMenu()" class="menu-button" style="display: none" :icon="menu"/> 
         </div>
       </div>
@@ -39,7 +39,7 @@
 <script lang="ts">
 import { IonHeader } from '@ionic/vue'
 import { logoAmplify, menu } from 'ionicons/icons'
-import { menuController } from '@ionic/vue';
+import { menuController } from '@ionic/vue'
 
 export default {
   components: {
@@ -60,8 +60,8 @@ export default {
     },
 
     openMenu() {
-      menuController.enable(true, 'menu');
-      menuController.open('menu');
+      menuController.enable(true, 'menu')
+      menuController.open('menu')
     }
   }
 }
@@ -78,8 +78,6 @@ export default {
   padding: 0px 20px;
 }
 
-
-
 ul {
   list-style: none;
 }
@@ -89,7 +87,7 @@ li {
 }
 
 h2 {
- margin: 0px;
+  margin: 0px;
 }
 
 a {
@@ -104,7 +102,7 @@ a {
 }
 
 .sign-up:hover {
- --background: blue;
+  --background: blue;
 }
 // .header {
 //   display: flex;
@@ -115,10 +113,8 @@ a {
 // }
 
 .links {
-  
   width: 100%;
 }
-
 
 //   a {
 //     margin: 0 2rem 0 0;
@@ -147,7 +143,7 @@ a {
 // }
 
 // .searchbar {
-  
+
 // }
 
 // a:hover {
@@ -161,10 +157,8 @@ a {
   .sign-up {
     display: none;
   }
-  .menu-button{
+  .menu-button {
     display: block !important;
   }
 }
-
-
 </style>

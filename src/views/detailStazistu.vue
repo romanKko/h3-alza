@@ -30,11 +30,7 @@
                       <p class="title">Number</p>
                       <p>934820390</p>
                     </div>
-                    <div class="kontakt-info">
-                      <p class="title">IG</p>
-                      <p>sladky_rolko</p>
-                    </div>
-                    <ion-button class="button">Kontaktovat</ion-button>
+                    <ion-button class="button">Kontaktovať</ion-button>
                   </ion-col>
                 </ion-row>
               </ion-grid>
@@ -45,19 +41,19 @@
       <ion-grid>
         <ion-row>
           <ion-col class="zarovnanie" size="6">
-            <h1 class="size">Miesto staze</h1>
+            <h1 class="size">Miesto stáže</h1>
             <p class="sub-title">Bratislava, alebo remote odkialkolvek z domu</p>
           </ion-col>
           <ion-col class="zarovnanie" size="6">
             <h1 class="size">Vzdelanie</h1>
-            <p class="sub-title">Halova, Skola pre mentalne retardovane deti</p>
+            <p class="sub-title">Hálova 16, STU</p>
           </ion-col>
         </ion-row>
       </ion-grid>
       <ion-grid>
         <ion-row>
           <ion-col class="zarovnanie" size="12">
-            <h1 class="size">Licencie a certifikaty</h1>
+            <h1 class="size">Licencie a certifikáty</h1>
             <p class="sub-title">Cisco CCNA 1</p>
           </ion-col>
         </ion-row>
@@ -65,20 +61,20 @@
       <ion-grid>
         <ion-row>
           <ion-col class="zarovnanie" size="6">
-            <h1 class="size">Pozadovany plat</h1>
-            <p class="sub-title">Od 5E na hodinu</p>
+            <h1 class="size">Skúsenosti</h1>
+            <p class="sub-title">JavaScript, React, Angular</p>
           </ion-col>
           <ion-col class="zarovnanie" size="6">
             <h1 class="size">Prax</h1>
-            <p class="sub-title">Wezeo, IBM, Tvoja mamka s.r.o.</p>
+            <p class="sub-title">Wezeo - Full stack developer, IBM - Front-End developer</p>
           </ion-col>
         </ion-row>
       </ion-grid>
       <ion-grid>
         <ion-row>
           <ion-col class="zarovnanie" size="12">
-            <h1 class="size">Skills</h1>
-            <p class="sub-title">C++, C, Python, Web Dev</p>
+            <h1 class="size">Iné požiadavky</h1>
+            <p class="sub-title">Plat od €6 / hod.</p>
           </ion-col>
         </ion-row>
       </ion-grid>
