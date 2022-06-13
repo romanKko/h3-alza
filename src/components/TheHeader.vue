@@ -3,7 +3,7 @@
     <ion-toolbar>
       <div class="header-wrapper d-flex justify-between">
         <div class="d-flex justify-between">
-          <h2>WorkHub</h2>
+          <h2><a href="/onboarding">WorkHub</a></h2>
           <ion-icon
             :icon="logoAmplify"
             :style="{ fontSize: '40px', color: '#A760FF' }"
@@ -11,7 +11,7 @@
           <div class="links">
             <ul class="d-flex">
               <li>
-                <a href="/onboarding">Onboarding</a>
+                <a href="/onboarding">Home</a>
               </li>
               <li>
                 <a class="" href="/detail-staze">Detail Staze</a>
@@ -28,25 +28,11 @@
 
         <div class="d-flex ion-justify-content-around">
 
-<<<<<<< HEAD
-          <ion-button class="sign-up" @click="signUp()" fill="outline">Prihlásiť sa</ion-button>
+          <ion-button class="sign-up button-native" href="login" fill="outline">Prihlásiť sa</ion-button>
           <ion-icon @click="openMenu()" class="menu-button" style="display: none" :icon="menu"/> 
         </div>
       </div>
     </ion-toolbar>
-=======
-      <div class="links">
-        <a href="/onboarding">Onboarding</a>
-        <a class="ion-margin" href="/detail-staze">Detail Staze</a>
-        <a class="ion-margin" href="/detail-stazistu">Detail Stazistu</a>
-        <a class="ion-margin" href="/list-stazistov">List Stazistov</a>
-        <a class="ion-margin" href="/list-firiem">List Firiem</a>
-      </div>
-
-      <ion-button class="sign-up" @click="signUp()" fill="outline">Sign Up</ion-button>
-      <ion-button href="/login" fill="outline">Login</ion-button>
-    </div>
->>>>>>> 155bb72cb287c39ca8306635b0c7e342d526c9d8
   </ion-header>
 </template>
 
@@ -113,6 +99,8 @@ a {
 
 .sign-up {
   transition-duration: 300ms;
+  color: red !important;
+  fill: blue;
 }
 
 .sign-up:hover {
