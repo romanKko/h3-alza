@@ -25,7 +25,7 @@
       </div>
 
       <div class="ft-content ft-name-section">
-        <h1>SusAlza3</h1>
+        <h1>WorkHub</h1>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore cupiditate est quam
           reiciendis itaque pariatur ea adipisci neque, quisquam saepe explicabo voluptatem

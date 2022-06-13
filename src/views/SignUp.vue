@@ -18,39 +18,53 @@
         </ion-segment>
 
         <div :style="{ marginTop: '2rem' }">
-          <div v-if="firma">
+          <div v-if="accountType">
             <ion-item>
               <ion-label position="fixed">Nazov Firmy</ion-label>
-              <ion-input></ion-input>
+              <ion-input v-model="form.firma"></ion-input>
             </ion-item>
             <ion-item>
               <ion-label position="fixed">E-mail</ion-label>
-              <ion-input></ion-input>
+              <ion-input v-model="form.email"></ion-input>
             </ion-item>
             <ion-item>
               <ion-label position="fixed">Password</ion-label>
-              <ion-input></ion-input>
+              <ion-input v-model="form.pass"></ion-input>
             </ion-item>
           </div>
 
-          <div v-if="!firma">
+          <div v-if="!accountType">
             <ion-item>
               <ion-label position="fixed">Meno</ion-label>
-              <ion-input></ion-input>
+              <ion-input v-model="form.meno"></ion-input>
 
               <ion-label position="fixed">Priezvisko</ion-label>
-              <ion-input></ion-input>
+              <ion-input v-model="form.priezvisko"></ion-input>
             </ion-item>
             <ion-item>
               <ion-label position="fixed">E-mail</ion-label>
-              <ion-input></ion-input>
+              <ion-input v-model="form.email"></ion-input>
             </ion-item>
             <ion-item>
               <ion-label position="fixed">Password</ion-label>
-              <ion-input></ion-input>
+              <ion-input v-model="form.pass"></ion-input>
             </ion-item>
           </div>
         </div>
+
+        <div class="buttons">
+          <ion-button @click="validateForm">Sign up</ion-button>
+        </div>
+        <div :style="{ marginTop: '2rem' }">
+          <p id="title-about-me">OR</p>
+        </div>
+
+        <div class="other-signup">
+          <ion-button>Facebook</ion-button>
+          <ion-button>Google</ion-button>
+        </div>
+
+        <p v-if="!form.isValid">Invalid Login</p>
       </div>
       <the-footer />
     </ion-content>
@@ -67,14 +81,34 @@ export default {
 
   data() {
     return {
-      firma: false
+      accountType: 'firma',
+      form: {
+        firma: '',
+        meno: '',
+        priezvisko: '',
+        email: '',
+        pass: '',
+        isValid: true
+      }
     }
   },
 
   methods: {
     segmentChanged(ev: CustomEvent) {
-      console.log('Segment changed', ev)
-      this.firma = ev.detail.value === 'firma'
+      this.accountType = ev.detail.value === 'firma'
+    },
+
+    validateForm() {
+      const validFirma = !!this.form.firma && !!this.form.email && !!this.form.pass
+      const validUser = !!this.form.meno && this.form.priezvisko && !!this.form.pass
+
+      if ((this.accountType && validFirma) || (!this.accountType && validUser)) {
+        this.form.isValid = true
+        alert('good login')
+      } else {
+        this.form.isValid = false
+        alert('bad login')
+      }
     }
   }
 }
@@ -91,5 +125,46 @@ export default {
 
 .searchbar {
   margin: 1rem 25vw 5rem 25vw;
+}
+
+.button {
+  margin-top: 3rem;
+}
+
+#title-about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(190, 190, 190);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.3rem;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+#title-about-me::before {
+  margin-right: 20px;
+  content: '';
+  display: block;
+  width: 240px;
+  height: 1px;
+  background: rgb(190, 190, 190);
+}
+
+#title-about-me::after {
+  margin-left: 20px;
+  content: '';
+  display: block;
+  width: 240px;
+  height: 1px;
+  background: rgb(190, 190, 190);
+}
+
+.other-signup {
+  display: flex;
 }
 </style>
