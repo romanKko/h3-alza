@@ -1,23 +1,17 @@
 <template>
   <ion-page style="--ion-background-color: white">
-    <ion-content :fullscreen="true">
+    <ion-content>
       <the-header />
       <div class="title">
         <h1>Frontend Developer</h1>
       </div>
 
       <div class="head">
-        <img class="pfp" src="./img/expatriate.png" alt="" />
-      </div>
-
-      <div class="basic-info">
-        <ion-button @click="apply()">Apply</ion-button>
-        <p class="kontakt">Tel. c.: +421 921 837 293</p>
-        <div class="plat">$ 1.000 - $ 2.000 / monthFf</div>
+        <img src="./img/office.png" alt="bugala je kokotko co ma maly penis">
       </div>
 
       <div class="content">
-        <div class="background ion-padding border-radius: 50px">
+        <div class="ion-padding">
           <p class="info">
             Do nášho tímu hľadáme junior, medior aj senior Java Fullstack developerov na inovatívne
             projekty v oblasti digitalizácie nemeckých samospráv a s tým súvisiace nastavovanie
@@ -30,7 +24,7 @@
           </p>
         </div>
         <br />
-        <div class="background ion-padding">
+        <div class="ion-padding">
           <p class="info">
             Pozícii vyhovujú uchádzači so vzdelaním stredoškolské s maturitou vysokoškolské I.
             stupňa vysokoškolské II. stupňa vysokoškolské III. stupňa Vzdelanie v odbore Informačné
@@ -41,6 +35,11 @@
             CSS • Oracle • znalosť nemčiny
           </p>
         </div>
+      </div>
+      <div class="basic-info">
+        <div class="plat">$ 1.000 - $ 2.000 / month</div>
+        <ion-button @click="apply()">Apply</ion-button>
+        <p class="kontakt">Tel. c.: +421 921 837 293</p>
       </div>
       <the-footer />
     </ion-content>
@@ -64,7 +63,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .title {
   margin-top: 2rem;
   display: flex;
@@ -78,11 +77,11 @@ export default {
   font-size: 2rem;
 }
 
-.head {
-  background-image: url(./img/office.webp);
-  margin: 1rem 10vw;
-  background-repeat: no-repeat;
-  height: 100%;
+.head{
+  img {
+      width: 100%;
+      height: 30%;
+  }  
 }
 
 .basic-info {
@@ -90,8 +89,12 @@ export default {
   flex-direction: row;
   align-items: center;
   margin-right: 20vw;
-  justify-content: space-evenly;
-  margin: 0 10vw 0 50vw;
+  justify-content: center !important;
+  margin: 0;
+}
+
+.plat {
+  color: black !important;
 }
 
 .basic-info > div {
@@ -106,8 +109,13 @@ export default {
   flex-direction: column;
 }
 
+.info {
+  /* height: ; */
+}
+
 ion-button {
   min-width: 80px;
+  max-width: 130px;
 }
 
 .pfp {

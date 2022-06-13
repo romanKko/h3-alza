@@ -11,12 +11,6 @@
         <img src="./img/elastic.png" alt="" class="onboarding-img" />
       </div>
 
-      <div class="searchbar">
-        <ion-item>
-          <ion-searchbar placeholder="Vyhľadajte stáž, stážistu alebo firmu"></ion-searchbar>
-        </ion-item>
-      </div>
-
       <section-title subUp="Spravna volba" title="Vyber najlepsich" />
 
       <div>
