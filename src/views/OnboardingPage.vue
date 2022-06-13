@@ -6,7 +6,7 @@
       <div class="head">
         <div class="head-title">
           <h1>WorkHub</h1>
-          <p>Adam Brix je nas styler, designer, a influencer.</p>
+          <p>The best place to find the right internship just for you.</p>
         </div>
         <img src="./img/elastic.png" alt="" class="onboarding-img" />
       </div>
@@ -234,7 +234,7 @@ ion-card-title {
   }
 
   p {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 0;
     font-weight: 300;
     color: rgb(43, 43, 43);
