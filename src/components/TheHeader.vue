@@ -4,10 +4,7 @@
       <div class="header-wrapper d-flex justify-between">
         <div class="d-flex justify-between">
           <h2>WorkHub</h2>
-          <ion-icon
-            :icon="logoAmplify"
-            :style="{ fontSize: '40px', color: '#A760FF' }"
-          ></ion-icon>
+          <ion-icon :icon="logoAmplify" :style="{ fontSize: '40px', color: '#A760FF' }"></ion-icon>
           <div class="links">
             <ul class="d-flex">
               <li>
@@ -27,33 +24,18 @@
         </div>
 
         <div class="d-flex ion-justify-content-around">
-
-<<<<<<< HEAD
           <ion-button class="sign-up" @click="signUp()" fill="outline">Prihlásiť sa</ion-button>
-          <ion-icon @click="openMenu()" class="menu-button" style="display: none" :icon="menu"/> 
+          <ion-icon @click="openMenu()" class="menu-button" style="display: none" :icon="menu" />
         </div>
       </div>
     </ion-toolbar>
-=======
-      <div class="links">
-        <a href="/onboarding">Onboarding</a>
-        <a class="ion-margin" href="/detail-staze">Detail Staze</a>
-        <a class="ion-margin" href="/detail-stazistu">Detail Stazistu</a>
-        <a class="ion-margin" href="/list-stazistov">List Stazistov</a>
-        <a class="ion-margin" href="/list-firiem">List Firiem</a>
-      </div>
-
-      <ion-button class="sign-up" @click="signUp()" fill="outline">Sign Up</ion-button>
-      <ion-button href="/login" fill="outline">Login</ion-button>
-    </div>
->>>>>>> 155bb72cb287c39ca8306635b0c7e342d526c9d8
   </ion-header>
 </template>
 
 <script lang="ts">
 import { IonHeader } from '@ionic/vue'
 import { logoAmplify, menu } from 'ionicons/icons'
-import { menuController } from '@ionic/vue';
+import { menuController } from '@ionic/vue'
 
 export default {
   components: {
@@ -74,8 +56,8 @@ export default {
     },
 
     openMenu() {
-      menuController.enable(true, 'menu');
-      menuController.open('menu');
+      menuController.enable(true, 'menu')
+      menuController.open('menu')
     }
   }
 }
@@ -92,8 +74,6 @@ export default {
   padding: 0px 20px;
 }
 
-
-
 ul {
   list-style: none;
 }
@@ -103,7 +83,7 @@ li {
 }
 
 h2 {
- margin: 0px;
+  margin: 0px;
 }
 
 a {
@@ -116,7 +96,7 @@ a {
 }
 
 .sign-up:hover {
- --background: blue;
+  --background: blue;
 }
 // .header {
 //   display: flex;
@@ -127,10 +107,8 @@ a {
 // }
 
 .links {
-  
   width: 100%;
 }
-
 
 //   a {
 //     margin: 0 2rem 0 0;
@@ -159,7 +137,7 @@ a {
 // }
 
 // .searchbar {
-  
+
 // }
 
 // a:hover {
@@ -173,10 +151,8 @@ a {
   .sign-up {
     display: none;
   }
-  .menu-button{
+  .menu-button {
     display: block !important;
   }
 }
-
-
 </style>

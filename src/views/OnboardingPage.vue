@@ -250,6 +250,13 @@ ion-card-title {
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  background-image: url(./img/tinygrey.png);
+  // background-color: rgb(14, 14, 14);
+  backdrop-filter: opacity(20%);
+  background-position: bottom;
+  background-size: 100% 75%;
+  background-repeat: no-repeat;
 }
 
 .cards {
