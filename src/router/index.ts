@@ -8,6 +8,7 @@ import ListStazistov from '../views/ListStazistov.vue'
 import ListFiriem from '../views/ListFiriem.vue'
 import NotFound from '../views/NotFound.vue'
 import SignUp from '../views/SignUp.vue'
+import TheLogin from '../views/TheLogin.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -42,6 +43,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/signup',
     name: 'Sign Up',
     component: SignUp
+  },
+  {
+    path: '/login',
+    component: TheLogin
   },
   {
     path: '/list-firiem',
