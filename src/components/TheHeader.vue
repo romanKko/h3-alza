@@ -20,6 +20,7 @@
       </div>
 
       <ion-button class="sign-up" @click="signUp()" fill="outline">Sign Up</ion-button>
+      <ion-button href="/login" fill="outline">Login</ion-button>
     </div>
   </ion-header>
 </template>
