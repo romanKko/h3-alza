@@ -59,9 +59,15 @@
           <p id="title-about-me">OR</p>
         </div>
 
-        <div class="other-signup">
-          <ion-button>Facebook</ion-button>
-          <ion-button>Google</ion-button>
+        <div class="other-signup" style="justify-between">
+          <ion-icon
+            :icon="logoFacebook"
+            :style="{ fontSize: '60px', color: '#4267B2'}"
+          ></ion-icon>
+          <ion-icon
+            :icon="logoGoogle"
+            :style="{ fontSize: '60px', color: '#DB4437'}"
+          ></ion-icon>
         </div>
 
         <p v-if="!form.isValid">Invalid Login</p>
@@ -75,9 +81,17 @@
 import TheHeader from '@/components/TheHeader.vue'
 import TheFooter from '@/components/TheFooter.vue'
 import { IonContent, IonPage } from '@ionic/vue'
+import { logoGoogle, logoFacebook } from 'ionicons/icons'
 
 export default {
   components: { TheHeader, TheFooter, IonPage, IonContent },
+
+  setup() {
+    return {
+      logoFacebook,
+      logoGoogle
+    }
+  },
 
   data() {
     return {
@@ -117,6 +131,7 @@ export default {
 <style lang="scss" scoped>
 .signup {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   align-content: center;
   flex-wrap: nowrap;
@@ -165,6 +180,8 @@ export default {
 }
 
 .other-signup {
-  display: flex;
+  display: center;
+  padding: 0px 250px;
+  
 }
 </style>

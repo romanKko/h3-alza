@@ -4,11 +4,11 @@
       <div class="header-wrapper d-flex justify-between">
         <div class="d-flex justify-between">
           <h2 @click="routeTo('Onboarding')" id="whub-title">WorkHub</h2>
-          <ion-icon :icon="logoAmplify" :style="{ fontSize: '40px', color: '#A760FF' }"></ion-icon>
+          <ion-icon :icon="logoAmplify" :style="{ fontSize: '40px', color: '#4285F4' }"></ion-icon>
           <div class="links">
             <ul class="d-flex">
               <li>
-                <a href="/onboarding">Onboarding</a>
+                <a href="/onboarding">Home</a>
               </li>
               <li>
                 <a class="" href="/detail-staze">Detail Staze</a>
@@ -99,6 +99,8 @@ a {
 
 .sign-up {
   transition-duration: 300ms;
+  color: red !important;
+  fill: blue;
 }
 
 .sign-up:hover {
