@@ -75,7 +75,7 @@ export default {
 .header-wrapper {
   // display: flex;
   // justify-content: space-between;
-  padding: 0px 20px;
+  padding-left: 20px;
 }
 
 ul {
@@ -96,7 +96,8 @@ a {
 }
 
 .sign-up {
-  transition-duration: 300ms;
+  margin: 5px 5px;
+  transition-duration: 500ms;
   color: red !important;
   fill: blue;
 }
