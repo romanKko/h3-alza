@@ -72,6 +72,10 @@ export default {
   align-items: center;
 }
 
+.contact {
+  padding-left: 10px;
+}
+
 .title > h1 {
   font-weight: bold;
   font-size: 2rem;

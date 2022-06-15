@@ -9,6 +9,7 @@ import ListFiriem from '../views/ListFiriem.vue'
 import NotFound from '../views/NotFound.vue'
 import SignUp from '../views/SignUp.vue'
 import TheLogin from '../views/TheLogin.vue'
+import ApplyForm from '../views/ApplyForm.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -56,6 +57,10 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/:pathMatch(.*)*',
     component: NotFound
+  },
+  {
+    path: '/apply-form',
+    component: ApplyForm
   }
 ]
 
