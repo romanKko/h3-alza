@@ -156,7 +156,7 @@
   </ion-page>
 </template>
 
-<script>
+<script lang="ts">
 import { IonContent, IonPage, IonIcon } from '@ionic/vue'
 import {
   shieldCheckmarkOutline,
