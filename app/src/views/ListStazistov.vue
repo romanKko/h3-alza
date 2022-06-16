@@ -72,7 +72,7 @@
               <ion-card-content class="info">Lokacia: {{ intern.bydlisko }}</ion-card-content>
               <hr class="hr" />
               <ion-card-content class="buttons">
-                <ion-button> Zobraziť profil </ion-button>
+                <ion-button @click="viewProfile()"> Zobraziť profil </ion-button>
                 <ion-button> Kontaktovať </ion-button>
               </ion-card-content>
             </ion-card>
@@ -115,6 +115,11 @@ export default {
       console.log(this.interns)
     } catch (error) {
       //this.$toast.error(error)
+    }
+  },
+  methods: {
+    viewProfile() {
+      this.$router.push({ name: 'Detaily Stazistu' })
     }
   }
 }

@@ -33,6 +33,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/detail-stazistu',
+    name: 'Detaily Stazistu',
     component: DetailStazistu
   },
   {
