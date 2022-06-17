@@ -6,7 +6,7 @@
       <div class="head">
         <div class="head-title">
           <h1>WorkHub</h1>
-          <p>The best place to find the right internship just for you.</p>
+          <p>The way to find your right internship.</p>
         </div>
         <img src="./img/elastic.png" alt="" class="onboarding-img" />
       </div>
@@ -222,13 +222,13 @@ ion-card-title {
   width: 30vw;
 
   h1 {
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 600;
     margin-bottom: 0;
   }
 
   p {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-top: 0;
     font-weight: 300;
     color: rgb(43, 43, 43);
