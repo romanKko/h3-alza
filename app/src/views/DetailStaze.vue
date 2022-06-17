@@ -74,7 +74,7 @@
           <ion-grid class="flex column align justify">
             <ion-row>
               <ion-col>
-                <ion-card class="radius">
+                <ion-card class="radius radius-card">
                   <ion-card-header>
                     <div class="flex justify column align">
                       <img
@@ -95,7 +95,7 @@
                 </ion-card>
               </ion-col>
               <ion-col>
-                <ion-card class="radius">
+                <ion-card class="radius radius-card">
                   <ion-card-header>
                     <div class="flex justify column align">
                       <img
@@ -118,7 +118,7 @@
             </ion-row>
             <ion-row>
               <ion-col>
-                <ion-card class="radius">
+                <ion-card class="radius radius-card">
                   <ion-card-header>
                     <div class="flex justify column align">
                       <img
@@ -139,7 +139,7 @@
                 </ion-card>
               </ion-col>
               <ion-col>
-                <ion-card class="radius">
+                <ion-card class="radius radius-card">
                   <ion-card-header>
                     <div class="flex justify column align">
                       <img
@@ -316,7 +316,7 @@ export default {
 
 .pozadie {
   height: 30rem;
-  background-color: #e5e5e5;
+  background-color: rgba(243, 248, 255, 1);
 }
 
 .pfp-pozadie {
@@ -344,12 +344,6 @@ img {
   border-radius: 1000px;
 }
 
-.prax {
-  background-color: #3a8ef6;
-  width: 60rem;
-  border-radius: 80px;
-}
-
 .img-card {
   border-radius: 10000px;
 }
@@ -357,6 +351,22 @@ img {
 .radius {
   border-radius: 30px;
   cursor: pointer;
+}
+
+
+.prax {
+  background-color: #3a8ef6;
+  width: 60rem;
+  height: 70rem;
+  border-radius: 80px;
+}
+
+.radius-card{
+    width: 20rem;
+}
+
+.button{
+    width: 10rem;
 }
 
 .radius-info {

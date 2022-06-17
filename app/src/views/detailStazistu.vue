@@ -4,6 +4,7 @@
 
     <ion-content>
       <div class="pozadie">
+          <br><br><br>
         <ion-grid class="">
           <ion-row class="flex justify align ion-margin">
             <ion-col size="5" class=" ">
@@ -24,7 +25,7 @@
               </div>
               <br>
               <br>
-              <ion-button>kontaktovat</ion-button>
+              <ion-button class="button">kontaktovat</ion-button>
             </ion-col>
             <ion-col size="6" class="flex justify align">
               <div class="pfp-pozadie flex align justify">
@@ -161,7 +162,7 @@
           <ion-grid class="flex column align justify">
             <ion-row>
               <ion-col>
-                <ion-card class="radius">
+                <ion-card class="radius radius-card">
                   <ion-card-header>
                     <div class="flex justify column align">
                       <img
@@ -182,7 +183,7 @@
                 </ion-card>
               </ion-col>
               <ion-col>
-                <ion-card class="radius">
+                <ion-card class="radius radius-card">
                   <ion-card-header>
                     <div class="flex justify column align">
                       <img
@@ -205,7 +206,7 @@
             </ion-row>
             <ion-row>
               <ion-col>
-                <ion-card class="radius">
+                <ion-card class="radius radius-card">
                   <ion-card-header>
                     <div class="flex justify column align">
                       <img
@@ -226,7 +227,7 @@
                 </ion-card>
               </ion-col>
               <ion-col>
-                <ion-card class="radius">
+                <ion-card class="radius radius-card">
                   <ion-card-header>
                     <div class="flex justify column align">
                       <img
@@ -403,7 +404,7 @@ export default {
 
 .pozadie {
   height: 30rem;
-  background-color: #e5e5e5;
+  background-color: rgba(243, 248, 255, 1);
 }
 
 .pfp-pozadie {
@@ -431,11 +432,25 @@ img {
   border-radius: 1000px;
 }
 
+
+
 .prax {
   background-color: #3a8ef6;
   width: 60rem;
+  height: 70rem;
   border-radius: 80px;
 }
+
+.radius-card{
+    width: 20rem;
+}
+
+.button{
+    width: 10rem;
+}
+
+
+
 
 .img-card {
   border-radius: 10000px;
