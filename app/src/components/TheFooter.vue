@@ -4,16 +4,16 @@
       <div id="links">
         <div class="ft-content">
           <h2 class="ft-left-title">Menu</h2>
-          <a class="link" href="/"> Home </a>
-          <a class="link" href="/campaigns"> Explore </a>
+          <a class="link" href="/onboarding"> Home </a>
+          <a class="link" href="/signup"> Sign Up </a>
           <a class="link" href="/contact"> FAQ </a>
         </div>
 
         <div class="ft-content">
           <h2 class="ft-left-title">Categories</h2>
-          <a class="link" href="/"> Staze </a>
-          <a class="link" href="/"> Stazisti </a>
-          <a class="link" href="/"> Firmy </a>
+          <a class="link" href="/list-stazi"> Staze </a>
+          <a class="link" href="/list-stazistov"> Stazisti </a>
+          <a class="link" href="/list-firiem"> Firmy </a>
         </div>
 
         <div class="ft-content">
