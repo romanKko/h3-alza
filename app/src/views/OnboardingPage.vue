@@ -156,7 +156,7 @@
   </ion-page>
 </template>
 
-<script>
+<script lang="ts">
 import { IonContent, IonPage, IonIcon } from '@ionic/vue'
 import {
   shieldCheckmarkOutline,
@@ -269,16 +269,15 @@ ion-card-title {
 
   ion-card:hover {
     cursor: pointer;
-    background-color: rgb(35, 143, 220);
-    transition: background-color 0.2s ease-out;
   }
 }
 
 .card {
   height: 250px;
   width: 300px;
-  transition: background-color 0.2s ease-out;
-  background: rgba(46, 156, 236, 1);
+  background: inherit;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;

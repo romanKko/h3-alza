@@ -22,10 +22,10 @@
             <ion-item>
               <ion-label>Mesto</ion-label>
               <ion-select multiple="true">
-                <ion-select-option value="">Bratislava</ion-select-option>
-                <ion-select-option value="">Banská Bystrica</ion-select-option>
-                <ion-select-option value="">Remote</ion-select-option>
-                <ion-select-option value="">Other</ion-select-option>
+                <ion-select-option value="area-BA">Bratislava</ion-select-option>
+                <ion-select-option value="area-BB">Banská Bystrica</ion-select-option>
+                <ion-select-option value="area-remote">Remote</ion-select-option>
+                <ion-select-option value="area-other">Other</ion-select-option>
               </ion-select>
             </ion-item>
           </ion-col>
@@ -34,11 +34,11 @@
             <ion-item>
               <ion-label>Plat</ion-label>
               <ion-select multiple="true">
-                <ion-select-option value="">Do €200</ion-select-option>
-                <ion-select-option value="">Do €400</ion-select-option>
-                <ion-select-option value="">Do €1,000</ion-select-option>
-                <ion-select-option value="">Nad €1,000</ion-select-option>
-                <ion-select-option value="">Flexibilná</ion-select-option>
+                <ion-select-option value="pay-t">Do €200</ion-select-option>
+                <ion-select-option value="pay-f">Do €400</ion-select-option>
+                <ion-select-option value="pay-t">Do €1,000</ion-select-option>
+                <ion-select-option value="pay-ot">Nad €1,000</ion-select-option>
+                <ion-select-option value="pay-flex">Flexibilná</ion-select-option>
               </ion-select>
             </ion-item>
           </ion-col>
@@ -47,10 +47,10 @@
             <ion-item>
               <ion-label>Popularita</ion-label>
               <ion-select multiple="true">
-                <ion-select-option value="">Najoblúbenejšie</ion-select-option>
-                <ion-select-option value="">Najnovšie</ion-select-option>
-                <ion-select-option value="">Relevantné</ion-select-option>
-                <ion-select-option value="">Podľa počtu zamestnancov</ion-select-option>
+                <ion-select-option value="pop-best">Najoblúbenejšie</ion-select-option>
+                <ion-select-option value="pop-new">Najnovšie</ion-select-option>
+                <ion-select-option value="pop-rel">Relevantné</ion-select-option>
+                <ion-select-option value="pop-ppl">Podľa počtu zamestnancov</ion-select-option>
               </ion-select>
             </ion-item>
           </ion-col>
